@@ -2,39 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hello World">
-    <title>Hello World</title>
-
-    <style>
-        html {
-            font-family: sans-serif;
-        }
-
-        body {
-            width: 50%;
-            max-width: 800px;
-            min-width: 400px;
-            margin: auto;
-        }
-
-        p {
-            color: red;
-            padding: 3px;
-        }
-    </style>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="icon" type="image/png" href="panneau_interdit.png">
+    <title>Mon Blog</title>
 </head>
 <body>
     <header>
-        <h1>Bonjour</h1>
+        <img src="Quebec-et-Montreal.webp" alt="image à la une" class="featured-image">
+        <h1>Le Canada vous veut</h1>
+        <p>Si les grands espaces vous tentent, le Canada recherche des candidats français pour combler un déficit de postes dans certains secteurs.</p>
+        <ul class="metadata">
+            <li>Auteur : Quentin Pognant-Gros</li>
+            <li>Date de publication : 25 juillet 2025</li>
+        </ul>
     </header>
 
     <main>
-        <p>Je suis un paragraphe</p>
+        <section>
+            <h2>Titre à entrer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam eaque tempora, natus eligendi perferendis voluptas sapiente dicta,
+                    esse deleniti nobis ad enim ea provident cum corporis iusto fugit rerum tempore!</p>
+        </section>
+
+        <iframe width="560" height="315" src="drapeau_canadien_30fps.mp4" type="video/mp4" frameborder="0" allowfullscreen></iframe>
     </main>
 
-    <footer>
-        Tout droit réservé à moi
-    </footer>
+    <form>
+        <h2>Laisser un commentaire</h2>
+
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Adresse Email :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="comment">Commentaire :</label>
+        <textarea id="comment" name="comment" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
 </body>
 </html>

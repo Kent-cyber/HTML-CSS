@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    line-height: 1.6;
+}
+h1 {
+    color: #333;
+}
+.featured-image {
+    width: 40%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.metadata {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    color: #666;
+}
+iframe {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+form {
+    margin-top: 2rem;
+}
+label {
+    display: block;
+    margin-top: 1rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
