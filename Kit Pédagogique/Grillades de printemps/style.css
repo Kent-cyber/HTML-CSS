@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        'header header ads'
+        'nav main main'
+        'nav main main'
+        'nav footer footer';
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 5px;
+    padding: 5px;
+}
+
+body > header, aside, nav, main, footer {
+    background-color: #BBCCFF;
+    padding: 10px;
+}
+
+header { grid-area: header;}
+aside { grid-area: ads;}
+nav { grid-area: nav;}
+main { grid-area: main;}
+footer { grid-area: footer;}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+section {
+    background-color: white;
+}

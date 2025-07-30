@@ -4,43 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello World">
+    <meta name="description" content="Bonjour je suis Quentin Pognant-Gros">
     <link rel="stylesheet" media="screen" href="style.css">
-    <link rel="icon" type="image/png" href="panneau_interdit.png">
+    <link rel="icon" href="img/umbrella-corporation.png">
     <title>Mon Blog</title>
 </head>
 <body>
     <header>
-        <img src="Quebec-et-Montreal.webp" alt="image à la une" class="featured-image">
-        <h1>Le Canada vous veut</h1>
-        <p>Si les grands espaces vous tentent, le Canada recherche des candidats français pour combler un déficit de postes dans certains secteurs.</p>
-        <ul class="metadata">
-            <li>Auteur : Quentin Pognant-Gros</li>
-            <li>Date de publication : 25 juillet 2025</li>
+        <ul class="menu">
+            <li>
+                <a href="index.html" class="actif">Accueil</a>
+            </li>
+            <li>
+                <a href="#">Jeux vidéo</a>
+            </li>
+            <li>
+                <a href="#">Musiques</a>
+            </li>
+            <li>
+                <a href="#">Films</a>
+            </li>
+            <li>
+                <a href="contact/contact.html">Contact</a>
+            </li>
         </ul>
+        <h1>Mon Blog</h1>
     </header>
 
     <main>
-        <section>
-            <h2>Titre à entrer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ullam eaque tempora, natus eligendi perferendis voluptas sapiente dicta,
-                    esse deleniti nobis ad enim ea provident cum corporis iusto fugit rerum tempore!</p>
+        <section class="presentation">
+            <h2>Présentation personelle</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In hic assumenda explicabo fugit quam perferendis laudantium vel obcaecati harum velit,
+                laboriosam placeat, cupiditate exercitationem rem cumque consequatur quis, vero delectus.</p>
+            <img src="" alt="Image personelle">
         </section>
 
-        <iframe width="560" height="315" src="drapeau_canadien_30fps.mp4" type="video/mp4" frameborder="0" allowfullscreen></iframe>
+        <section class="tableau">
+            <h2>Les tableaux, c'est beau !</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste, tempore molestiae similique aperiam sapiente,
+                repellendus animi enim quia repudiandae magni neque quod a earum voluptatum quibusdam ratione? Ipsam, optio?</p>
+            <hr>
+            <table>
+                <tr>
+                    <th>Identifiant</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Onette</td>
+                    <td>Camille</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Golay</td>
+                    <td>Jerry</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Afritte</td>
+                    <td>Barack</td>
+                </tr>
+            </table>
+        </section>
+        <section class="introcss">
+            <h2>La cascade CSS</h2>
+            <p>La cascade est un algorithme qui définit comment les navigateurs combinent les valeurs des propriétés selon leurs différentes sources. La cascade définit les priorités et l'ordre dans lequel les règles CSS sont appliquées.</p>
+            <p>Comment savoir quelle règle CSS va s'appliquer à un éléments, en particulier quand deux règles entre en conflit ? Pour déterminer cela, les sélecteurs CSS on un poids et une priorité qui va permettre aux navigateurs de calculer la préséance des règles à appliquer.</p>
+            <h2>Quel est l'ordre de priorité des règles CSS ?</h2>
+            <p>Types de sélecteurs CSS par ordre d'importance</p>
+            <ol>
+                <li>La déclaration de style "en ligne" (dans le code HTML avec l'attribut style="") est toujours prioritaire.</li>
+                <li>Le sélecteur d'identifiant (ex: #titre)</li>
+                <li>Le sélecteur d'attribut (ex: [type="text"])</li>
+                <li>Le sélecteur de classe (ex: .liste)</li>
+                <li>Le sélecteur de balise (ex: body, div, section....)</li>
+                <li>Les pseudos éléments (ex: ::before, :first-child...)</li>
+                <li>Les règles par défaut définies par le navigateur</li>
+            </ol>
+        </section>
     </main>
-
-    <form>
-        <h2>Laisser un commentaire</h2>
-
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Adresse Email :</label>
-        <input type="email" id="email" name="email" required>
-        <label for="comment">Commentaire :</label>
-        <textarea id="comment" name="comment" rows="5" required></textarea>
-        <button type="submit">Envoyer</button>
-    </form>
+    <footer>
+        Copyright Pognant-Gros Quentin
+    </footer>
 </body>
 </html>

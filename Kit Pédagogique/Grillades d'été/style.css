@@ -1,0 +1,21 @@
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 5px;
+}
+
+.principal > section {
+    background-color: #CCCC33;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    padding-bottom: 50px;
+}
+
+.s1 { grid-column: 1 / 5; }
+.s2 { grid-row: 2 / span 4;}
+.s4 { grid-column: 3 / 5;}
+.s5 { grid-column: 2 / 4;}
+.s10 { grid-column: 2 / 5;}

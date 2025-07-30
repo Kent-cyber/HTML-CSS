@@ -1,0 +1,40 @@
+html {
+    background-color: #222222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    background-color: #224422;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #226622;
+}
+
+img {
+    width: 100px;
+}
+
+h1, h2, h3 {
+    color: #CCFFCC;
+}
+
+a {
+    color: #CCCCFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

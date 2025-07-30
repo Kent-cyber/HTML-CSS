@@ -1,50 +1,70 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 2rem;
-    line-height: 1.6;
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(img/cosmos.jpg);
 }
+
 h1 {
-    color: #333;
+    color: whitesmoke;
 }
-.featured-image {
-    width: 40%;
-    height: auto;
-    margin-bottom: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.metadata {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-    color: #666;
-}
-iframe {
-    max-width: 100%;
-    margin-top: 1rem;
-}
-form {
-    margin-top: 2rem;
-}
-label {
-    display: block;
-    margin-top: 1rem;
-}
-input, textarea {
+
+main {
     width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-button {
-    margin-top: 1rem;
-    padding: 0.7rem 1.2rem;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #B0C4DE;
+    justify-content: space-around;
 }
-button:hover {
-    background-color: #0056b3;
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    min-width: 120px;
+    margin: 0.5rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    background-color: #1ABC9C;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+    transition: all 1s;
+}
+
+.menu a.actif {
+    background-color: #000;
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.menu a:hover, .menu a:hover.actif {
+    background-color: #ed2794;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+
+section {
+    background-color: #EBF0F0;
+    width: 1000px;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: x-large;
 }
